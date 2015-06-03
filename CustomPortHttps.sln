@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E56209E8-990B-4374-A04B-336C3A1FF9D4}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CustomPortHttps", "src\CustomPortHttps\CustomPortHttps.xproj", "{F216DE0E-BA88-4029-BCA1-6E4760018197}"

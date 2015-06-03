@@ -1,5 +1,5 @@
 # CustomPortHttps Middleware
-##Detect any MovedPermanently (301) response and redirect the request to the custom specified port if it's https scheme.
+## Detect any MovedPermanently (301) response and redirect the request to the custom specified port if it's https scheme.
 
 *Useful in combination of `[RequireHttps]` attribute while developing on localhost.*
 
