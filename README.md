@@ -1,4 +1,4 @@
-# CustomPortHttps Middleware
+# Custom Port Https Middleware for ASPNET5
 ## Detect any MovedPermanently (301) response and redirect the request to the custom specified port if it's https scheme.
 
 *Useful in combination of `[RequireHttps]` attribute while developing on localhost.*
@@ -11,10 +11,10 @@ but you probabily have https in another port. (43300)
 
 This middleware is aimed to provide an easy way to redirect to the correct port.
 
-How to use it?
+### How to use it?
 
 Configure your application to serve on https on any custom port. If you are using IISExpress, there's already a certificate for ports 433xx.
-Then add to your Startup.cs class
+Then add to your `Startup.cs` class
 ```
 public void ConfigureDevelopment(IApplicationBuilder app)
 {
@@ -24,4 +24,4 @@ public void ConfigureDevelopment(IApplicationBuilder app)
 }
 ```
 
-*note that `ConfigureDevelopment` will only be called if you have an environment variable calles 'Development'*
+*note that `ConfigureDevelopment` will only be called if you have an 'Development' environment variable*
