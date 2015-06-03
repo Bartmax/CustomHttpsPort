@@ -34,7 +34,7 @@ namespace CustomHttpsPort
             }
         }
     }
-    public static class CustomPortHttpsMiddlewareExtensions
+    public static class CustomHttpsPortMiddlewareExtensions
     {
         public static IApplicationBuilder UseCustomHttpsPort(this IApplicationBuilder app, int port)
         {
