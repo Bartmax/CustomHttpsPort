@@ -5,7 +5,7 @@
 
 When working on localhost in a custom port (1234)
 
-if you use something like [RequireHttps] attribute it will be redirected to https://localhost:1234
+if you use something like `[RequireHttps]` attribute it will be redirected to `https://localhost:1234`
 
 but you probabily have https in another port. (43300)
 
@@ -24,4 +24,4 @@ public void ConfigureDevelopment(IApplicationBuilder app)
 }
 ```
 
-*note that ConfigureDevelopment will only be called if you have an environment variable calles 'Development'*
+*note that `ConfigureDevelopment` will only be called if you have an environment variable calles 'Development'*
