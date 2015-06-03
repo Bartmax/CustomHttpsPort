@@ -4,14 +4,14 @@ using System;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace CustomPortHttps
+namespace CustomHttpsPort
 {
-    public class CustomPortHttpsMiddleware
+    public class CustomHttpsPortMiddleware
     {
         private readonly RequestDelegate _next;
         private readonly int _port;
         private const string SCHEME_HTTPS = "https";
-        public CustomPortHttpsMiddleware(RequestDelegate next, int port)
+        public CustomHttpsPortMiddleware(RequestDelegate next, int port)
         {
             if (!(port > 0 && port < 65535)) throw new ArgumentOutOfRangeException(nameof(port), "Port must be greater than 0 and less than 65535");
             _next = next;
@@ -36,9 +36,9 @@ namespace CustomPortHttps
     }
     public static class CustomPortHttpsMiddlewareExtensions
     {
-        public static IApplicationBuilder UseCustomPortHttps(this IApplicationBuilder app, int port)
+        public static IApplicationBuilder UseCustomHttpsPort(this IApplicationBuilder app, int port)
         {
-            return app.UseMiddleware<CustomPortHttpsMiddleware>(port);
+            return app.UseMiddleware<CustomHttpsPortMiddleware>(port);
         }
     }
 }
