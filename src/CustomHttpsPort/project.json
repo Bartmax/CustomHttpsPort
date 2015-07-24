@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.0.0-beta5-1001",
+  "version": "1.0.0-beta5",
   "description": "This middleware allows you to define a Custom Https Port",
   "authors": [ "Bart Calixto" ],
   "tags": [ "Https middleware" ],
@@ -7,11 +7,11 @@
   "licenseUrl": "",
 
   "dependencies": {
-    "Microsoft.AspNet.Mvc.Abstractions": "6.0.0-beta5-*"
+    "Microsoft.AspNet.Mvc.Abstractions": "6.0.0-beta5"
   },
 
   "frameworks": {
     "dnx451": { },
-    "dnxcore50": { }
+    "dotnet": { }
   }
 }
